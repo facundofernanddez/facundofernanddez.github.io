@@ -1,10 +1,11 @@
-import { Navbar, Body } from "./components";
+import "./styles/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Body />
+      <div className="container">
+        <h2>Portfolio version 2.0</h2>
+      </div>
     </div>
   );
 }
