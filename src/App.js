@@ -1,12 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { Home } from "./components/Home";
 import "./styles/bootstrap.min.css";
+import "./styles/app.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <h2>Portfolio version 2.0</h2>
+    <BrowserRouter>
+      <div className="App container">
+        <br />
+        <br />
+        <br />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
