@@ -4,7 +4,7 @@ export const Contact = () => {
       <div className="row">
         <div className="col-6">
           <div className="card">
-            <div className="card-title">Mis redes sociales</div>
+            <h3 className="card-title">Mis redes sociales</h3>
           </div>
         </div>
         <div className="col-6">
@@ -15,7 +15,7 @@ export const Contact = () => {
               </label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Email"
               />

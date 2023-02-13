@@ -1,23 +1,18 @@
-import { Link } from "react-router-dom";
+import profile from "../images/profile.jpg";
 
 export const Home = () => {
   return (
     <div className="card">
       <div className="row">
-        <div className="col-4">
-          <img
-            src="https://res.cloudinary.com/jerrick/image/upload/c_scale,q_auto/5e4b8a9e183ebe001d061014.jpg"
-            className="card-img"
-            alt="..."
-          />
+        <div className="col-md-4">
+          <img src={profile} className="card-img" alt="..." />
         </div>
-        <div className="col-8">
+        <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title">
+            <h1 className="card-title text-center">
               I'm Facundo Fernandez 👋🏽 <br />
-              <br /> Full-Stack Developer
-            </h5>
-            <p className="card-text">⚠ Portfolio under construction ⚠</p>
+              <p className="text-secondary">Full-Stack Developer</p>
+            </h1>
           </div>
         </div>
       </div>

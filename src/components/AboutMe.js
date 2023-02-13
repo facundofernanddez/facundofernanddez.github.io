@@ -3,8 +3,10 @@ export const AboutMe = () => {
     <>
       <div className="card">
         <div className="card-body">
-          <h2 className="card-title">Soy el aboutme</h2>
-          <p className="card-text">Aca va el texto sobre mi</p>
+          <h1 className="card-title">About me</h1>
+          <p className="card-text fs-4 text-secondary">
+            Aca va el texto sobre mi
+          </p>
         </div>
       </div>
     </>

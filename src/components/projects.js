@@ -37,8 +37,8 @@ export const Projects = () => {
       <div className="row">
         {projects.map((oneProject, index) => {
           return (
-            <div className="col-4" key={index}>
-              <div className="card my-4">
+            <div className="col-md-4" key={index}>
+              <div className="card">
                 <img src={oneProject.image} className="card-img" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{oneProject.title}</h5>

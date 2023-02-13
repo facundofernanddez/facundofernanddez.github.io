@@ -1,38 +1,48 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <nav>
-      <ul className="nav nav-tabs nav-fill bg-dark">
+      <ul className="nav nav-pills nav-fill bg-light my-4 rounded">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
-            Home
-          </Link>
+          <NavLink className="nav-link m-2 link-dark" to="/">
+            <i class="bi bi-house fs-2" />
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/aboutme">
-            About me
-          </Link>
+          <NavLink className="nav-link m-2 link-dark" to="/aboutme">
+            <i class="bi bi-info-square fs-2" />
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/projects">
-            Projects
-          </Link>
+          <NavLink className="nav-link m-2 link-dark" to="/projects">
+            <i class="bi bi-code-square fs-2"></i>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/contact">
-            Contact
-          </Link>
+          <NavLink className="nav-link m-2 link-dark" to="/contact">
+            <i class="bi bi-envelope fs-2"></i>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/">
-            Github
-          </Link>
+          <a
+            className="nav-link m-2 link-dark"
+            href="https://github.com/facundofernanddez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-github fs-2" />
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/">
-            Linkedin
-          </Link>
+          <a
+            className="nav-link m-2 link-dark"
+            href="https://www.linkedin.com/in/facundofernanddez/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-linkedin fs-2" />
+          </a>
         </li>
       </ul>
     </nav>
