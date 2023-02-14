@@ -1,35 +1,40 @@
-import calculadora from "../images/calculadora.png";
-
 export const Projects = () => {
   const projects = [
     {
-      title: "my project 1",
-      image: "https://i.ytimg.com/vi/Q7bbdJpiLRs/maxresdefault.jpg",
-      overview: "description of project 1",
+      title: "ToDo List",
+      image: "todolist",
+      overview: "Simple ToDo List made with ReactJS.",
+      tech: "ReactJS, HTML, CSS",
+      finished: true,
     },
     {
       title: "my project 2",
-      image:
-        "https://www.lasirena.la/__export/1529782056181/sites/debate/img/2018/02/09/gatos_crop1513745237964_crop1516831635779_crop1518189988779.jpg_242310155.jpg",
+      image: "calculadora",
       overview: "description of project 2",
+      tech: "",
+      finished: false,
     },
     {
       title: "my project 2",
-      image:
-        "https://www.bunko.pet/__export/1619479458417/sites/debate/img/2021/04/26/curiosidades_de_los_gatos_crop1619478790261.jpg_1532751094.jpg",
+      image: "contador-clics",
       overview: "description of project 2",
+      tech: "",
+      finished: false,
     },
-    {
-      title: "my project 2",
-      image:
-        "https://3.bp.blogspot.com/-WoMyw3HPzyE/V1em-csdnBI/AAAAAAAAAuQ/sNe05qdDa7wyaloRJmfWTjj8Sg9UEVd5ACKgB/s1600/cat-1046544_1920.jpg",
-      overview: "description of project 2",
-    },
-    {
-      title: "my project 2",
-      image: "https://i.ytimg.com/vi/Hlz7ass3gRk/maxresdefault.jpg",
-      overview: "description of project 2",
-    },
+    // {
+    //   title: "my project 2",
+    //   // image: "",
+    //   overview: "description of project 2",
+    //   tech: "",
+    //   finished: false,
+    // },
+    // {
+    //   title: "my project 2",
+    //   // image: "",
+    //   overview: "description of project 2",
+    //   tech: "",
+    //   finished: false,
+    // },
   ];
 
   return (
@@ -37,12 +42,27 @@ export const Projects = () => {
       <div className="row">
         {projects.map((oneProject, index) => {
           return (
-            <div className="col-md-4" key={index}>
+            <div className="col-sm-6 col-md-4" key={index}>
               <div className="card">
-                <img src={oneProject.image} className="card-img" alt="..." />
+                <img
+                  src={require("../images/" + oneProject.image + ".png")}
+                  className="card-img-top w-100 w-md75"
+                  alt="..."
+                  style={{ width: "18rem", height: "18rem" }}
+                />
                 <div className="card-body">
                   <h5 className="card-title">{oneProject.title}</h5>
-                  <p className="card-text">{oneProject.overview}</p>
+                  <p className="card-text text-secondary">
+                    {oneProject.overview} <br /> <strong>Tech: </strong>
+                    {oneProject.tech}
+                  </p>
+                  <small
+                    className={`badge bg-${
+                      oneProject.finished ? "success" : "warning"
+                    }`}
+                  >
+                    {oneProject.finished ? "Finished" : "In progress"}
+                  </small>
                 </div>
               </div>
             </div>

@@ -33,23 +33,21 @@ export const AboutMe = () => {
             development, this makes me want to improve myself every day. I'm
             very constant and persevering, which always helps me to finish the
             tasks. <br /> <br />I would really love to continue working with
-            Java and ReactJS and be able to dig into the depths of these
+            JAVA and ReactJS and be able to dig into the depths of these
             languages and frameworks.
           </p>
           <br />
           <h1 className="card-title">Skills</h1>
-          <p className="card-text fs-4">
-            {techList.map((tech, index) => {
-              return (
-                <div
-                  className="img-thumbnail shadow bg-body-tertiary d-inline-block rounded-circle m-2"
-                  key={index}
-                >
-                  <img src={tech} alt="..." />
-                </div>
-              );
-            })}
-          </p>
+          {techList.map((tech, index) => {
+            return (
+              <div
+                className="img-thumbnail shadow bg-body-tertiary d-inline-block rounded-circle m-2"
+                key={index}
+              >
+                <img src={tech} alt="Tech" />
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

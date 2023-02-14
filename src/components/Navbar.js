@@ -6,22 +6,22 @@ export const Navbar = () => {
       <ul className="nav nav-pills nav-fill bg-light my-4 rounded">
         <li className="nav-item">
           <NavLink className="nav-link m-2 link-dark" to="/">
-            <i class="bi bi-house fs-2" />
+            <i className="bi bi-house fs-2" />
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link m-2 link-dark" to="/aboutme">
-            <i class="bi bi-info-square fs-2" />
+            <i className="bi bi-info-square fs-2" />
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link m-2 link-dark" to="/projects">
-            <i class="bi bi-code-square fs-2"></i>
+            <i className="bi bi-code-square fs-2"></i>
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link m-2 link-dark" to="/contact">
-            <i class="bi bi-envelope fs-2"></i>
+            <i className="bi bi-envelope fs-2"></i>
           </NavLink>
         </li>
         <li className="nav-item">

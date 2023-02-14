@@ -10,7 +10,7 @@ export const Home = () => {
         <div className="col-md-8">
           <div className="card-body">
             <h1 className="card-title text-center">
-              I'm Facundo Fernandez 👋🏽 <br />
+              I'm Facundo 👋🏽 <br />
               <p className="text-secondary">Full-Stack Developer</p>
             </h1>
           </div>
