@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav>
-      <ul className="nav nav-pills nav-fill bg-light my-4 rounded">
+      <ul className="nav nav-pills nav-fill bg-light my-4 rounded p-2">
         <li className="nav-item">
           <NavLink className="nav-link m-2 link-dark" to="/">
             <i className="bi bi-house fs-2" />

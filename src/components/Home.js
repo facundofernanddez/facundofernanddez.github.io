@@ -5,11 +5,11 @@ export const Home = () => {
     <div className="card">
       <div className="row">
         <div className="col-md-4">
-          <img src={profile} className="card-img" alt="..." />
+          <img src={profile} className="card-img rounded" alt="..." />
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h1 className="card-title text-center">
+            <h1 className="card-title text-center rounded shadow p-2">
               I'm Facundo 👋🏽 <br />
               <p className="text-secondary">Full-Stack Developer</p>
             </h1>
