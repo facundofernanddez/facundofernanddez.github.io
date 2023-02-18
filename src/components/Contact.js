@@ -6,6 +6,7 @@ import { Modal } from "react-bootstrap";
 export const Contact = () => {
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [isLoadingButton, setIsLoadingButton] = useState(false);
 
   const {
     register,
@@ -21,6 +22,10 @@ export const Contact = () => {
     setShowModal(false);
   };
 
+  const handleClickLoadingButton = () => {
+    setIsLoadingButton(true);
+  };
+
   const sendEmail = (data, e) => {
     emailjs
       .sendForm(
@@ -32,16 +37,18 @@ export const Contact = () => {
       .then(
         (response) => {
           setMessage(
-            "¡Gracias he recibido tu mensaje, pronto me estaré poniendo en contacto contigo! 😁"
+            "Thank you, I've received your message and I'll be contacting you soon! 😁"
           );
           reset();
+          setIsLoadingButton(false);
           setShowModal(true);
         },
         (error) => {
           setMessage(
-            "Ha ocurrido un error inesperado 😱, intentalo nuevamente en unos minutos"
+            "An unexpected error has occurred 😱, please try again in a few minutes"
           );
           reset();
+          setIsLoadingButton(false);
           setShowModal(true);
         }
       );
@@ -146,8 +153,12 @@ export const Contact = () => {
             {errors?.body?.message}
           </span>
         </div>
-        <button className="btn btn-primary" type="submit">
-          Send Message
+        <button
+          className={`btn btn-primary ${isLoadingButton ? "disabled" : ""}`}
+          type="submit"
+          onClick={!isLoadingButton ? handleClickLoadingButton : null}
+        >
+          {isLoadingButton ? "Loading..." : "Send Message"}
         </button>
 
         {/* MODAL */}
