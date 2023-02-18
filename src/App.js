@@ -6,6 +6,7 @@ import { Contact } from "./components/Contact";
 import { AboutMe } from "./components/AboutMe";
 import "./styles/app.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
