@@ -1,24 +1,7 @@
-import htmlImg from "../images/html.png";
-import cssImg from "../images/css.png";
-import bootstrapImg from "../images/bootstrap.png";
-import javascriptImg from "../images/javascript.png";
-import reactImg from "../images/react.png";
-import gitImg from "../images/git.png";
-import javaImg from "../images/java.png";
-import springImg from "../images/spring.png";
+import { techList } from "./techList";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const AboutMe = () => {
-  const techList = [
-    javaImg,
-    springImg,
-    gitImg,
-    javascriptImg,
-    reactImg,
-    htmlImg,
-    cssImg,
-    bootstrapImg,
-  ];
-
   return (
     <>
       <div className="card">
@@ -40,12 +23,21 @@ export const AboutMe = () => {
           <h1 className="card-title">Skills</h1>
           {techList.map((tech, index) => {
             return (
-              <div
-                className="img-thumbnail shadow bg-body-tertiary d-inline-block rounded-circle m-2"
+              <OverlayTrigger
+                placement="bottom"
+                overlay={
+                  <Tooltip key={index}>
+                    <strong>{tech.name}</strong>
+                  </Tooltip>
+                }
                 key={index}
               >
-                <img src={tech} alt="Tech" />
-              </div>
+                <img
+                  className="img-thumbnail shadow bg-body-tertiary d-inline-block rounded-3 m-2"
+                  src={tech.img}
+                  alt={tech.name}
+                />
+              </OverlayTrigger>
             );
           })}
         </div>
