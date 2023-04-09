@@ -7,6 +7,7 @@ import gitImg from "../images/git.png";
 import javaImg from "../images/java.png";
 import springImg from "../images/spring.png";
 import reduxImg from "../images/redux.png";
+import tailwindcssImg from "../images/tailwindcss.png";
 
 export const techList = [
   {
@@ -22,12 +23,20 @@ export const techList = [
     name: "Bootstrap",
   },
   {
+    img: tailwindcssImg,
+    name: "Tailwind CSS",
+  },
+  {
     img: javascriptImg,
     name: "JavaScript",
   },
   {
     img: reactImg,
-    name: "React",
+    name: "React.js",
+  },
+  {
+    img: reduxImg,
+    name: "Redux Toolkit",
   },
   {
     img: gitImg,
@@ -40,9 +49,5 @@ export const techList = [
   {
     img: springImg,
     name: "Spring",
-  },
-  {
-    img: reduxImg,
-    name: "Redux Toolkit",
   },
 ];
