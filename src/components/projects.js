@@ -54,7 +54,10 @@ export const Projects = () => {
       <div className="row">
         {projects.map((oneProject, index) => {
           return (
-            <div className="col-sm-6 col-lg-4 mb-2" key={index}>
+            <div
+              className="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-2"
+              key={index}
+            >
               <div className="card">
                 <img
                   src={require("../images/" + oneProject.image + ".png")}
