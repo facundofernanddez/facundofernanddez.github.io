@@ -5,8 +5,8 @@ export const Projects = () => {
     {
       title: "ToDo List",
       image: "todolist",
-      overview: "Simple ToDo List made with ReactJS.",
-      tech: "Javascript, ReactJS, HTML, CSS",
+      overview: "Simple ToDo List made with React.js.",
+      tech: "Javascript, React.js, HTML, CSS",
       finished: true,
       code: "https://github.com/facundofernanddez/react-app-tareas",
       deploy: "https://facundofernanddez.github.io/react-app-tareas/",
@@ -25,7 +25,7 @@ export const Projects = () => {
       image: "usermanagement",
       overview:
         "RESTful app || CRUD User management || Login-Register and check email functionality. Code front: https://github.com/facundofernanddez/react-java-crud-app",
-      tech: "JavaScript, ReactJS, Java, Spring Framework, Spring Security, MySQL",
+      tech: "JavaScript, React.js, Java, Spring Framework, Spring Security, MySQL",
       finished: false,
       code: "https://github.com/facundofernanddez/react-java-crud-app-backend",
       deploy: "",
@@ -34,19 +34,22 @@ export const Projects = () => {
       title: "Movies App",
       image: "moviesapp",
       overview:
-        "Movie app made with ReactJS provided by the Alkemy Challenge. With consumption of The Movie DB API and functionalities such as consulting, searching and saving to favorites.",
-      tech: "JavaScript, ReactJS, Bootstrap",
+        "Movie app made with React.js provided by the Alkemy Challenge. With consumption of The Movie DB API and functionalities such as consulting, searching and saving to favorites.",
+      tech: "JavaScript, React.js, Bootstrap",
       finished: false,
       code: "https://github.com/facundofernanddez/alkemi-challenge-react",
       deploy: "",
     },
-    // {
-    //   title: "my project 2",
-    //   // image: "",
-    //   overview: "description of project 2",
-    //   tech: "",
-    //   finished: false,
-    // },
+    {
+      title: "Chocho's Burgers",
+      image: "chochos-burger",
+      overview:
+        "E-Commerce || Login-Register and check email functionality || Consumption Back-End API Rest JAVA || Code front: https://github.com/facundofernanddez/e-commerce-front",
+      tech: " React.js/Redux Toolkit, Bootstrap, JAVA, Spring Boot, MySQL, Postman",
+      finished: false,
+      code: "https://github.com/facundofernanddez/e-commerce-back",
+      deploy: "",
+    },
   ];
 
   return (
