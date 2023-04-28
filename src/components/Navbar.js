@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import { OverlayTrigger } from "react-bootstrap";
 import { Tooltip } from "react-bootstrap";
@@ -13,17 +13,17 @@ export const Navbar = () => {
     {
       name: "About Me",
       className: "bi bi-info-square fs-2",
-      link: "/aboutme",
+      link: "./aboutme",
     },
     {
       name: "Projects",
       className: "bi bi-code-square fs-2",
-      link: "/projects",
+      link: "./projects",
     },
     {
       name: "Contact",
       className: "bi bi-envelope fs-2",
-      link: "/contact",
+      link: "./contact",
     },
     {
       name: "GitHub",
