@@ -8,7 +8,7 @@ export const Navbar = () => {
     {
       name: "Home",
       className: "bi bi-house fs-2",
-      link: "/",
+      link: "./",
     },
     {
       name: "About Me",
