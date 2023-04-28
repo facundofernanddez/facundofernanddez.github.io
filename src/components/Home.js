@@ -3,7 +3,7 @@ import profile from "../images/profile.jpg";
 export const Home = () => {
   return (
     <div className="card">
-      <div className="row">
+      <div className="row align-items-center">
         <div className="col-md-4">
           <img src={profile} className="card-img rounded" alt="..." />
         </div>
