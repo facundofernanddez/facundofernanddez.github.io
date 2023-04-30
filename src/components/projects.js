@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export const Projects = () => {
-  const projects = [
+  const myProjects = [
     {
       title: "ToDo List",
       image: "todolist",
@@ -46,16 +46,16 @@ export const Projects = () => {
       overview:
         "E-Commerce || Login-Register and check email functionality || Consumption Back-End API Rest JAVA || Code front: https://github.com/facundofernanddez/e-commerce-front",
       tech: " React.js/Redux Toolkit, Bootstrap, JAVA, Spring Boot, MySQL, Postman",
-      finished: false,
+      finished: true,
       code: "https://github.com/facundofernanddez/e-commerce-back",
-      deploy: "",
+      deploy: "https://chochos-burgers.vercel.app/",
     },
   ];
 
   return (
     <>
       <div className="row">
-        {projects.map((oneProject, index) => {
+        {myProjects.map((oneProject, index) => {
           return (
             <div
               className="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-2"
