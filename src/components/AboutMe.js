@@ -18,6 +18,9 @@ export const AboutMe = () => {
             tasks. <br /> <br />I would really love to continue working with
             JAVA and ReactJS and be able to dig into the depths of these
             languages and frameworks.
+            <br />
+            <br />
+            Currently I'm learning Node.js, Express, TypeScript and MongoDB.
           </p>
           <br />
           <h1 className="card-title">Skills</h1>
