@@ -34,11 +34,11 @@ export const Projects = () => {
       title: "Movies App",
       image: "moviesapp",
       overview:
-        "Movie app made with React.js provided by the Alkemy Challenge. With consumption of The Movie DB API and functionalities such as consulting, searching and saving to favorites.",
+        "Movie app made with React.js provided by the Alkemy Challenge. With consumption of The Movie DB API and functionalities such as consulting, searching and saving to favorites. || Credentials: User: challenge@alkemy.org Password: react",
       tech: "JavaScript, React.js, Bootstrap",
-      finished: false,
+      finished: true,
       code: "https://github.com/facundofernanddez/alkemi-challenge-react",
-      deploy: "",
+      deploy: "https://movies-app-neon-two.vercel.app/",
     },
     {
       title: "Chocho's Burgers",
