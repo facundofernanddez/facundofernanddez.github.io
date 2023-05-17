@@ -50,6 +50,16 @@ export const Projects = () => {
       code: "https://github.com/facundofernanddez/e-commerce-back",
       deploy: "https://chochos-burgers.vercel.app/",
     },
+    {
+      title: "Task API",
+      image: "",
+      overview:
+        "RESTful API Back-End project || Task Management (CRUD), Pagination and Search",
+      tech: "Node.js, Express, MongoDB, Postman",
+      finished: true,
+      code: "",
+      deploy: "",
+    },
   ];
 
   return (
