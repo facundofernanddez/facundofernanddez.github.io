@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className="flex space-x-5 pt-6">
             <a
-              href=""
+              href="https://github.com/facundofernanddez"
               target="_blank"
             >
               <svg
@@ -38,7 +38,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href=""
+              href="https://www.linkedin.com/in/facundofernanddez/"
               target="_blank"
             >
               <svg
@@ -50,7 +50,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href=""
+              href="mailto:facundofernanddez@gmail.com"
               target="_blank"
             >
               <svg
@@ -66,8 +66,8 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone my name is Facundo, I'm 26 years old and I'm Full Stack
-            Developer based in Corrientes/Argentina
+            Hey everyone my name is Facundo, I am 26 years old and I am Full
+            Stack Developer based in Corrientes/Argentina
           </p>
           <p>I love building Full Stack applications with React and Next.js</p>
           <p>
