@@ -36,15 +36,15 @@ export default function Navbar() {
                     Home
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/guestbook"
                     prefetch
                     className={`${
-                      pathname === "/contact"
+                      pathname === "/guetbook"
                         ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    Contact
+                    Guestbook
                   </Link>
                   <Link
                     href="/projects"
