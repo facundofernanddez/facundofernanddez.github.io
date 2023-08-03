@@ -1,3 +1,5 @@
+import Form from "../components/Form";
+
 export default function GuestbookPage() {
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -8,7 +10,9 @@ export default function GuestbookPage() {
       </div>
 
       <div className="w-full">
-        <div className="max-w-[500px] mx-auto mt-8"></div>
+        <div className="max-w-[500px] mx-auto mt-8">
+          <Form />
+        </div>
       </div>
     </div>
   );
