@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { prisma } from "./database/db";
 
 export async function postEntry(formData: FormData) {
@@ -11,4 +12,6 @@ export async function postEntry(formData: FormData) {
       username: "hello",
     },
   });
+
+  revalidatePath("/guestbook");
 }
