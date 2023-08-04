@@ -69,7 +69,11 @@ export default function Home() {
             Hey everyone my name is Facundo, I am 26 years old and I am Full
             Stack Developer based in Corrientes/Argentina
           </p>
-          <p>I love building Full Stack applications with React and Next.js</p>
+          <p>
+            I love building Full Stack applications with React and Next.js. My
+            tech stack is JAVA, Spring boot, MySQL, MongoDB, Node.js, React,
+            Next.js and TailwindCSS
+          </p>
           <p>
             I am thrilled to continue this journey, honing my skills, and
             inspiring me more
