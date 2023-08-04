@@ -15,7 +15,7 @@ export default function Home() {
           <Image
             alt="Picture of Facundo"
             src={Me}
-            className="h-48 w-48 rounded-full object-cover object-top"
+            className="h-56 w-56 rounded-full object-cover object-top"
           />
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
             Facundo Fernandez
@@ -66,17 +66,17 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone my name is Facundo, I am 26 years old and I am Full
-            Stack Developer based in Corrientes/Argentina
+            Hey everyone, my name is Facundo, and I'm a 26-year-old Full Stack
+            Developer based in Corrientes, Argentina.
           </p>
           <p>
-            I love building Full Stack applications with React and Next.js. My
-            tech stack is JAVA, Spring boot, MySQL, MongoDB, Node.js, React,
-            Next.js and TailwindCSS
+            I'm passionate about crafting exceptional Full Stack applications
+            using React and Next.js. My diverse tech stack includes JAVA, Spring
+            Boot, MySQL, MongoDB, Node.js, React, Next.js, and TailwindCSS.
           </p>
           <p>
-            I am thrilled to continue this journey, honing my skills, and
-            inspiring me more
+            Continuing on this exciting journey, I am dedicated to refining my
+            skills and finding inspiration along the way.
           </p>
         </div>
       </div>
