@@ -4,6 +4,7 @@ import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const pathname = usePathname() || "/";
@@ -58,11 +59,13 @@ export default function Navbar() {
                     Projects
                   </Link>
                   <ThemeButton />
+                  <LanguageSwitcher />
                 </div>
               </div>
 
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center sm:hidden gap-2">
                 <ThemeButton />
+                <LanguageSwitcher />
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:hover:bg-gray-800">
                   {open ? (
                     <svg
