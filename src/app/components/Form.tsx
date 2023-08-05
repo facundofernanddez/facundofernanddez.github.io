@@ -9,6 +9,12 @@ export default function Form() {
   const formRef = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
   const { lang } = useContext(LanguageContext);
+
+  const actionPost = async (formData: FormData) => {
+    await postEntry(formData);
+    formRef.current?.reset();
+  };
+
   return (
     <>
       <h3 className="pb-2">
@@ -17,10 +23,7 @@ export default function Form() {
           : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
       </h3>
       <form
-        action={async (formData) => {
-          // await postEntry(formData);
-          formRef.current?.reset();
-        }}
+        action={(formData) => actionPost(formData)}
         className="relative flex items-center text-sm mb-5"
         ref={formRef}
         style={{ opacity: pending ? 0.5 : 1 }}
