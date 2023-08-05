@@ -26,7 +26,7 @@ export default async function GuestbookPage() {
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <GuestbookTitle />
+        {/* <GuestbookTitle /> */}
       </div>
 
       <div className="w-full">
