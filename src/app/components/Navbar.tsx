@@ -5,9 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useContext } from "react";
+import { LanguageContext } from "./Provider";
 
 export default function Navbar() {
   const pathname = usePathname() || "/";
+  const lang = useContext(LanguageContext);
 
   return (
     <Disclosure as="nav">
@@ -18,7 +21,7 @@ export default function Navbar() {
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
                   <Link href="/">
-                    <h1 className="text-2xl font-medium">
+                    <h1 className="text-xl md:text-3xl font-medium">
                       Facundo <span className="text-teal-500">Fernandez</span>
                     </h1>
                   </Link>
