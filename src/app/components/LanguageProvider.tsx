@@ -1,6 +1,16 @@
-import { createContext, useState } from "react";
+"use client";
 
-const LanguageContext = createContext({});
+import { Dispatch, SetStateAction, createContext, useState } from "react";
+
+interface LanguageContextType {
+  lang: { language: string };
+  setLang: Dispatch<SetStateAction<{ language: string }>>;
+}
+
+export const LanguageContext = createContext<LanguageContextType>({
+  lang: { language: "en" },
+  setLang: () => {},
+});
 
 export default function LanguageProvider({
   children,
@@ -8,7 +18,7 @@ export default function LanguageProvider({
   children: React.ReactNode;
 }) {
   const [lang, setLang] = useState({
-    language: "en" || "es",
+    language: "en",
   });
 
   return (

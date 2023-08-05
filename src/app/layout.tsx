@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
 import { Provider } from "./components/ThemeProvider";
+import LanguageProvider from "./components/LanguageProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,12 +25,14 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-white text-black dark:bg-[#090908] dark:text-white h-full selection:bg-gray-500 dark:selection:bg-gray-800`}
       >
-        <Provider>
-          <Navbar />
-          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            {children}
-          </main>
-        </Provider>
+        <LanguageProvider>
+          <Provider>
+            <Navbar />
+            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              {children}
+            </main>
+          </Provider>
+        </LanguageProvider>
       </body>
     </html>
   );

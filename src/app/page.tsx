@@ -1,12 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Me from "public/IMG_1927.jpg";
+import { useContext } from "react";
+import { LanguageContext } from "./components/LanguageProvider";
 
 export default function Home() {
+  const { lang } = useContext(LanguageContext);
+
   return (
     <div className="divide-y divide-gray-100 dark:divide-gray-700">
       <div className="space-y-2 pt-5 pb-8 md:space-x-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-13">
-          Home
+          {lang.language === "en" ? "Home" : "Principal"}
         </h1>
       </div>
 
@@ -21,7 +27,9 @@ export default function Home() {
             Facundo Fernandez
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
-            Hey my name is Facundo and I am a Full Stack Developer
+            {lang.language === "en"
+              ? "Hey my name is Facundo and I am a Full Stack Developer"
+              : "¡Hola! Mi nombre es Facundo y soy un Desarrollador Full Stack"}
           </p>
 
           <div className="flex space-x-5 pt-6">
@@ -66,17 +74,19 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone, my name is Facundo, and I am a 26-year-old Full Stack
-            Developer based in Corrientes, Argentina.
+            {lang.language === "en"
+              ? "Hey everyone, my name is Facundo, and I am a 26-year-old Full Stack Developer based in Corrientes, Argentina."
+              : "¡Hola a todos! Mi nombre es Facundo, tengo 26 años y soy un Desarrollador Full Stack oriundo de Corrientes, Argentina."}
           </p>
           <p>
-            I am passionate about crafting exceptional Full Stack applications
-            using React and Next.js. My diverse tech stack includes JAVA, Spring
-            Boot, MySQL, MongoDB, Node.js, React, Next.js, and TailwindCSS.
+            {lang.language === "en"
+              ? "I am passionate about crafting exceptional Full Stack applications using React and Next.js. My diverse tech stack includes JAVA, Spring Boot, MySQL, MongoDB, Node.js, React, Next.js, and TailwindCSS."
+              : "Me apasiona construir aplicaciones Full Stack excepcionales con React y Next.js. Mi conjunto de tecnologías incluye JAVA, Spring Boot, MySQL, MongoDB, Node.js, React, Next.js y TailwindCSS."}
           </p>
           <p>
-            Continuing on this exciting journey, I am dedicated to refining my
-            skills and finding inspiration along the way.
+            {lang.language === "en"
+              ? "Continuing on this exciting journey, I am dedicated to refining my skills and inspiration along the way."
+              : "Estoy emocionado de seguir en este viaje, perfeccionando mis habilidades e inspirándome cada vez más."}
           </p>
         </div>
       </div>

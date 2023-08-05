@@ -1,16 +1,20 @@
 "use client";
 
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { postEntry } from "../action";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { LanguageContext } from "./LanguageProvider";
 
 export default function Form() {
   const formRef = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
+  const { lang } = useContext(LanguageContext);
   return (
     <>
       <p className="pb-2">
-        Hey, leave me a little message below! Is anonymous 😉
+        {lang.language === "en"
+          ? "Hey, leave me a little message below! Is anonymous 😉"
+          : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
       </p>
       <form
         action={async (formData) => {
@@ -23,7 +27,9 @@ export default function Form() {
       >
         <input
           type="text"
-          placeholder="Your message..."
+          placeholder={
+            lang.language === "en" ? "Your message..." : "Tu mensaje..."
+          }
           name="entry"
           required
           disabled={pending}
@@ -35,7 +41,7 @@ export default function Form() {
           disabled={pending}
           className="flex items-center justify-center absolute right-2 mt-1 font-medium h-7 bg-teal-500/30 text-neutral-900 dark:text-neutral-100 rounded w-16"
         >
-          Send
+          {lang.language === "en" ? "Send" : "Enviar"}
         </button>
       </form>
     </>
