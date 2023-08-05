@@ -18,7 +18,7 @@ export default function Form() {
       </h3>
       <form
         action={async (formData) => {
-          await postEntry(formData);
+          // await postEntry(formData);
           formRef.current?.reset();
         }}
         className="relative flex items-center text-sm mb-5"
