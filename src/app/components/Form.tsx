@@ -11,16 +11,16 @@ export default function Form() {
   const { lang } = useContext(LanguageContext);
   return (
     <>
-      <p className="pb-2">
+      <h3 className="pb-2">
         {lang.language === "en"
           ? "Hey, leave me a little message below! Is anonymous 😉"
           : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
-      </p>
+      </h3>
       <form
-        action={async (formData) => {
-          await postEntry(formData);
-          formRef.current?.reset();
-        }}
+        // action={async (formData) => {
+        //   await postEntry(formData);
+        //   formRef.current?.reset();
+        // }}
         className="relative flex items-center text-sm mb-5"
         ref={formRef}
         style={{ opacity: pending ? 0.5 : 1 }}
