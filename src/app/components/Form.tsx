@@ -17,10 +17,10 @@ export default function Form() {
           : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
       </h3>
       <form
-        // action={async (formData) => {
-        //   await postEntry(formData);
-        //   formRef.current?.reset();
-        // }}
+        action={async (formData) => {
+          await postEntry(formData);
+          formRef.current?.reset();
+        }}
         className="relative flex items-center text-sm mb-5"
         ref={formRef}
         style={{ opacity: pending ? 0.5 : 1 }}
