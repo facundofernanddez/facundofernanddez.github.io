@@ -12,5 +12,5 @@ model Guestbook{
   id String @id @map("_id") @default(auto()) @db.ObjectId
   message String
   username String
-  created_at DateTime @default(now())
+  created_at DateTime @default(now()) @db.Date
 }
