@@ -2,21 +2,27 @@ import Form from "../components/Form";
 import { prisma } from "../database/db";
 import GuestbookTitle from "./GuestbookTitle";
 
-async function getEntries() {
+// async function getEntries() {
+//   const data = await prisma.guestbook.findMany({
+//     take: 50,
+//     orderBy: {
+//       created_at: "desc",
+//     },
+//   });
+
+//   return data;
+// }
+
+export const revalidate = 60;
+
+export default async function GuestbookPage() {
+  // const data = await getEntries();
   const data = await prisma.guestbook.findMany({
     take: 50,
     orderBy: {
       created_at: "desc",
     },
   });
-
-  return data;
-}
-
-export const revalidate = 60;
-
-export default async function GuestbookPage() {
-  const data = await getEntries();
 
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
