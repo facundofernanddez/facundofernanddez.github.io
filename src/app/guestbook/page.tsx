@@ -31,7 +31,7 @@ export default async function GuestbookPage() {
 
       <div className="w-full">
         <div className="max-w-[500px] mx-auto mt-8">
-          <Form />
+          {/* <Form /> */}
           <div className="flex flex-col space-y-2">
             {data.map((entry) => (
               <div
