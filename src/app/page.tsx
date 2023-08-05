@@ -66,11 +66,11 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone, my name is Facundo, and I'm a 26-year-old Full Stack
+            Hey everyone, my name is Facundo, and I am a 26-year-old Full Stack
             Developer based in Corrientes, Argentina.
           </p>
           <p>
-            I'm passionate about crafting exceptional Full Stack applications
+            I am passionate about crafting exceptional Full Stack applications
             using React and Next.js. My diverse tech stack includes JAVA, Spring
             Boot, MySQL, MongoDB, Node.js, React, Next.js, and TailwindCSS.
           </p>
