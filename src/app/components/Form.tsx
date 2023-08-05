@@ -11,7 +11,7 @@ export default function Form() {
   const { lang } = useContext(LanguageContext);
 
   const actionPost = async (formData: FormData) => {
-    // await postEntry(formData);
+    await postEntry(formData);
     formRef.current?.reset();
   };
 
