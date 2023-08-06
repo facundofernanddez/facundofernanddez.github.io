@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
 import { Provider } from "./components/ThemeProvider";
 import LanguageProvider from "./components/LanguageProvider";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,9 +29,10 @@ export default function RootLayout({
         <LanguageProvider>
           <Provider>
             <Navbar />
-            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow footer">
               {children}
             </main>
+            <Footer />
           </Provider>
         </LanguageProvider>
       </body>
