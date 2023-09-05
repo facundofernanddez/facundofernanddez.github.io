@@ -17,11 +17,11 @@ export default function Form() {
 
   return (
     <>
-      <p className="pb-2">
+      <h3 className="pb-2">
         {lang.language === "en"
           ? "Hey, leave me a little message below! Is anonymous 😉"
           : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
-      </p>
+      </h3>
       <form
         action={(formData) => actionPost(formData)}
         className="relative flex items-center text-sm mb-5"
