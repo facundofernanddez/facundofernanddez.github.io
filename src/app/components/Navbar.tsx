@@ -4,9 +4,13 @@ import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
+import LanguageButton from "./LanguageButton";
+import { useContext } from "react";
+import { LanguageContext } from "./LanguageProvider";
 
 export default function Navbar() {
   const pathname = usePathname() || "/";
+  const { lang } = useContext(LanguageContext);
 
   return (
     <Disclosure as="nav">
@@ -17,7 +21,7 @@ export default function Navbar() {
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
                   <Link href="/">
-                    <h1 className="text-2xl font-medium">
+                    <h1 className="text-xl lg:text-3xl font-medium">
                       Facundo <span className="text-teal-500">Fernandez</span>
                     </h1>
                   </Link>
@@ -33,7 +37,7 @@ export default function Navbar() {
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    Home
+                    {lang.language === "en" ? "Home" : "Principal"}
                   </Link>
                   <Link
                     href="/guestbook"
@@ -44,7 +48,7 @@ export default function Navbar() {
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    Guestbook
+                    {lang.language === "en" ? "Guestbook" : "Visitas"}
                   </Link>
                   <Link
                     href="/projects"
@@ -55,15 +59,20 @@ export default function Navbar() {
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    Projects
+                    {lang.language === "en" ? "Projects" : "Proyectos"}
                   </Link>
                   <ThemeButton />
+                  <LanguageButton />
                 </div>
               </div>
 
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center sm:hidden gap-2">
                 <ThemeButton />
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:hover:bg-gray-800">
+                <LanguageButton />
+                <Disclosure.Button
+                  id=""
+                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:hover:bg-gray-800"
+                >
                   {open ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +119,7 @@ export default function Navbar() {
                     : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
                 }`}
               >
-                Home
+                {lang.language === "en" ? "Home" : "Principal"}
               </Link>
               <Link
                 href="/guestbook"
@@ -121,7 +130,7 @@ export default function Navbar() {
                     : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
                 }`}
               >
-                Guestbook
+                {lang.language === "en" ? "Guestbook" : "Visitas"}
               </Link>
               <Link
                 href="/projects"
@@ -132,7 +141,7 @@ export default function Navbar() {
                     : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
                 }`}
               >
-                Projects
+                {lang.language === "en" ? "Projects" : "Proyectos"}
               </Link>
             </div>
           </Disclosure.Panel>
