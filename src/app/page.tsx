@@ -80,7 +80,7 @@ export default function Home() {
           </p>
           <p>
             {lang.language === "en"
-              ? "I am passionate about crafting exceptional Full Stack applications using React and Next.js. My diverse tech stack includes JAVA, Spring Boot, MySQL, MongoDB, Node.js, React, Next.js, and TailwindCSS."
+              ? "I am passionate about crafting exceptional Full Stack applications using React and Next.js. My diverse tech stack includes JAVA, Spring Boot, MySQL, MongoDB, TypeScript, Node.js, React, Next.js, and TailwindCSS."
               : "Me apasiona construir aplicaciones Full Stack excepcionales con React y Next.js. Mi conjunto de tecnologías incluye JAVA, Spring Boot, MySQL, MongoDB, Node.js, React, Next.js y TailwindCSS."}
           </p>
           <p>
