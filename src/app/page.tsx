@@ -75,8 +75,7 @@ export default function Home() {
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
             {lang.language === "en"
-              ? "Hey everyone, my name is Facundo, 26 year old and I'm Full Stack Developer from Corrientes, Argentina."
-             
+              ? "Hey everyone, my name is Facundo and I'm Full Stack Developer from Corrientes, Argentina."
               : "¡Hola! Mi nombre es Facundo, tengo 26 años y soy un Desarrollador Full Stack oriundo de Corrientes, Argentina."}
           </p>
           <p>
