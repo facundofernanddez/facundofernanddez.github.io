@@ -76,7 +76,7 @@ export default function Home() {
           <p>
             {lang.language === "en"
               ? "Hey everyone, my name is Facundo and I'm Full Stack Developer from Corrientes, Argentina."
-              : "¡Hola! Mi nombre es Facundo, tengo 26 años y soy un Desarrollador Full Stack oriundo de Corrientes, Argentina."}
+              : "¡Hola! Mi nombre es Facundo, soy un Desarrollador Full Stack oriundo de Corrientes, Argentina."}
           </p>
           <p>
             {lang.language === "en"
