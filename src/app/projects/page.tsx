@@ -43,10 +43,13 @@ export default async function ProjectsPage() {
           >
             <div className="h-56 w-full relative">
               <Image
-                fill
+                // fill
                 src={project.imageUrl}
                 alt="Imagen del proyecto"
                 className="h-full w-full object-cover"
+                width={500}
+                height={500}
+                priority
               />
             </div>
 
