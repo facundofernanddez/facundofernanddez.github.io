@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Me from "public/IMG_1927.jpg";
+import Me from "/public/IMG_1927.jpg";
 import { useContext } from "react";
 import { LanguageContext } from "./components/LanguageProvider";
 

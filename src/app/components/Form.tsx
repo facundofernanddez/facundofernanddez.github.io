@@ -2,7 +2,7 @@
 
 import { ChangeEvent, useContext, useRef, useState } from "react";
 import { postEntry } from "../action";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import { LanguageContext } from "./LanguageProvider";
 
 export default function Form() {
