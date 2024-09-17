@@ -42,7 +42,7 @@ export default function Form() {
     <>
       <h3 className="pb-2">
         {lang.language === "en"
-          ? "Hey, leave me a little message below! Is anonymous 😉"
+          ? "Hey, leave me a little message below! It's anonymous 😉"
           : "¡Psst! Déjame un mensajito abajo. Es anónimo 😉"}
       </h3>
       <form
